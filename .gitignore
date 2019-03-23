@@ -1,0 +1,10 @@
+# Generated content
+node_modules
+vendor
+css
+
+# MacOS
+.DS_Store
+
+# vim
+*.swp
