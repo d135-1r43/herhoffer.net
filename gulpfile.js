@@ -43,7 +43,6 @@ gulp.task('dev', gulp.series('css', function() {
       baseDir: "./"
     }
   });
-  gulp.watch(['./scss/*.scss'], ['css']);
   gulp.watch("./*.html").on('change', browserSync.reload);
 }));
 
