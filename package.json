@@ -1,24 +1,19 @@
 {
   "name": "herhoffer.net",
-  "version": "1.0.0",
-  "description": "Statische Webseite als CV von Markus Herhoffer",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Bento-style portfolio website for Markus Herhoffer",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "live-server --port=8030 --open=/ --watch=.",
+    "start": "npm run dev"
   },
+  "keywords": [
+    "portfolio",
+    "bento",
+    "personal-website"
+  ],
   "author": "Markus Herhoffer",
   "license": "MIT",
-  "dependencies": {
-    "bulma": "^0.7.4"
-  },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-header": "^2.0.7",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-util": "^3.0.8",
-    "gulp-scp2": "^0.2.0"
+    "live-server": "^1.2.2"
   }
 }

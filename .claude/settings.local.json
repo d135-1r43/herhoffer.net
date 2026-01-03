@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree:*)",
+      "WebFetch(domain:bento.me)",
+      "Bash(npm install)"
+    ]
+  }
+}

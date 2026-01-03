@@ -1,42 +1,281 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Markus Herhoffer</title>
-  <link rel="stylesheet" href="css/bulma.css">
-  <script src="https://kit.fontawesome.com/65f86626f4.js" crossorigin="anonymous"></script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Markus Herhoffer - CTO, Music Enthusiast & Podcast Host. Building cutting-edge Digital Thread platforms and exploring the boundaries between Metal and Neo Classic music.">
+  <meta property="og:title" content="Markus Herhoffer">
+  <meta property="og:description" content="CTO at explore.de | Music Enthusiast | Podcast Host">
+  <meta name="twitter:card" content="summary">
+  <title>Markus Herhoffer - CTO, Music Enthusiast & Podcast Host</title>
 
-<body>
-  <section class="hero is-dark is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
+  <!-- Tailwind CSS CDN with JIT -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'media', // System preference detection
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-balance {
+        text-wrap: balance;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300 font-sans antialiased">
+
+  <!-- Main Container -->
+  <div class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Header Section -->
+      <header class="mb-12 text-center">
+        <!-- Avatar -->
+        <div class="mb-6 flex justify-center">
+          <div class="relative">
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
+              <div class="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                <span class="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-300">MH</span>
+              </div>
+            </div>
+            <div class="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-gray-50 dark:border-gray-950"></div>
+          </div>
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
           Markus Herhoffer
         </h1>
-        <h2 class="subtitle">
-          <a href="https://www.linkedin.com/in/markus-herhoffer/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.xing.com/profile/Markus_Herhoffer/"><i class="fab fa-xing-square"></i></a>
-          <a href="https://www.facebook.com/herhoffer"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/d1351r43/"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/d135_1r43"><i class="fab fa-twitter"></i></a>
-          <a href="https://codeculture.podigee.io"><i class="fas fa-podcast"></i></a>
-          <a href="https://blogs.taz.de/digitalkonzentrat"><i class="fas fa-blog"></i></a>
-        </h2>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        Markus Herhoffer &sdot; Scheyerer Str. 50 &sdot; 85276 Pfaffenhofen an der Ilm
-      </p>
+        <!-- Title -->
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 font-medium">
+          CTO <span class="text-gray-400 dark:text-gray-600">|</span> Music Enthusiast <span class="text-gray-400 dark:text-gray-600">|</span> Podcast Host
+        </p>
+
+        <!-- Bio -->
+        <p class="max-w-3xl mx-auto text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg text-balance">
+          I'm the CTO behind the cutting-edge Digital Thread platform of explore. I'm also a music enthusiast, constantly exploring new sounds and pushing boundaries between Metal and Neo Classic. I also co-founded the Blast of Eternity Festival and run a podcast.
+        </p>
+      </header>
+
+      <!-- Bento Grid -->
+      <main class="mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]">
+
+          <!-- Professional Work Card - Large (2x2) -->
+          <a href="https://explore.de" target="_blank" rel="noopener noreferrer"
+             class="group lg:col-span-2 lg:row-span-2 relative overflow-hidden rounded-3xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 dark:from-blue-500/20 dark:via-indigo-500/20 dark:to-purple-500/20"></div>
+
+            <!-- Content -->
+            <div class="relative p-6 md:p-8 h-full flex flex-col">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/20 dark:bg-blue-500/30 flex items-center justify-center">
+                  <i class="fas fa-briefcase text-2xl text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Professional Work</h2>
+              </div>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                CTO at explore.de, building cutting-edge Digital Thread platforms. Guest lecturer in Business Informatics at THI.
+              </p>
+
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <i class="fas fa-building w-5"></i>
+                  <span class="font-medium">explore.de</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <i class="fas fa-graduation-cap w-5"></i>
+                  <span class="font-medium">Gastdozent Wirtschaftsinformatik - THI</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Instagram Card -->
+          <a href="https://instagram.com/d1351r43" target="_blank" rel="noopener noreferrer"
+             class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="relative p-6 h-full flex flex-col justify-between text-white">
+              <div class="flex items-center gap-3">
+                <i class="fab fa-instagram text-3xl"></i>
+                <h3 class="text-xl font-bold">Instagram</h3>
+              </div>
+              <div>
+                <p class="text-white/90 font-medium">@d1351r43</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/markus-herhoffer" target="_blank" rel="noopener noreferrer"
+             class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 to-blue-500 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]">
+            <div class="relative p-6 h-full flex flex-col justify-between text-white">
+              <div class="flex items-center gap-3">
+                <i class="fab fa-linkedin text-3xl"></i>
+                <h3 class="text-xl font-bold">LinkedIn</h3>
+              </div>
+              <div>
+                <p class="text-white/90 font-medium">Connect with me</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Mastodon Card -->
+          <a href="https://mastodon.social/@d135_1r43" target="_blank" rel="noopener noreferrer"
+             class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]">
+            <div class="relative p-6 h-full flex flex-col justify-between text-white">
+              <div class="flex items-center gap-3">
+                <i class="fab fa-mastodon text-3xl"></i>
+                <h3 class="text-xl font-bold">Mastodon</h3>
+              </div>
+              <div>
+                <p class="text-white/90 font-medium">@d135_1r43</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Spotify Card -->
+          <a href="https://open.spotify.com/artist/16batobCJ2fn07uBEhzakG" target="_blank" rel="noopener noreferrer"
+             class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-green-600 to-green-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]">
+            <div class="relative p-6 h-full flex flex-col justify-between text-white">
+              <div class="flex items-center gap-3">
+                <i class="fab fa-spotify text-3xl"></i>
+                <h3 class="text-xl font-bold">Spotify</h3>
+              </div>
+              <div>
+                <p class="text-white/90 font-medium">Listen to my music</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Musical Works Card - Large (2x2) -->
+          <div class="lg:col-span-2 lg:row-span-2 relative overflow-hidden rounded-3xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-indigo-500/10 dark:from-pink-500/20 dark:via-purple-500/20 dark:to-indigo-500/20"></div>
+
+            <!-- Content -->
+            <div class="relative p-6 md:p-8 h-full flex flex-col">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/20 dark:bg-pink-500/30 flex items-center justify-center">
+                  <i class="fas fa-music text-2xl text-pink-600 dark:text-pink-400"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Musical Works</h2>
+              </div>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6">
+                Exploring the boundaries between Metal and Neo Classic through various projects.
+              </p>
+
+              <div class="space-y-4 flex-grow">
+                <a href="https://opus-irae.com" target="_blank" rel="noopener noreferrer"
+                   class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-pink-500 dark:hover:border-pink-500 transition-colors group">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-guitar text-pink-600 dark:text-pink-400"></i>
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors">Opus Iræ</h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Melodic Black Metal</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="https://vrsnsmv.com" target="_blank" rel="noopener noreferrer"
+                   class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-compact-disc text-purple-600 dark:text-purple-400"></i>
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">VRS:NSMV</h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Dark Ambient, Neoklassik</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="https://codeculture.podigee.io" target="_blank" rel="noopener noreferrer"
+                   class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors group">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-podcast text-blue-600 dark:text-blue-400"></i>
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Code Culture Podcast</h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Tech & Culture Discussions</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="https://blastofeternity.de" target="_blank" rel="noopener noreferrer"
+                   class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 transition-colors group">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-calendar-alt text-orange-600 dark:text-orange-400"></i>
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">Blast of Eternity Festival</h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Music Festival Co-Founder</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Card - Medium (2x1) -->
+          <a href="https://www.google.com/maps/place/Pfaffenhofen+an+der+Ilm" target="_blank" rel="noopener noreferrer"
+             class="group lg:col-span-2 relative overflow-hidden rounded-3xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/20 dark:to-teal-500/20"></div>
+
+            <!-- Content -->
+            <div class="relative p-6 md:p-8 h-full flex items-center gap-6">
+              <div class="w-14 h-14 rounded-xl bg-emerald-500/20 dark:bg-emerald-500/30 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-3xl text-emerald-600 dark:text-emerald-400"></i>
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Location</h2>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Scheyerer Str. 50<br>
+                  85276 Pfaffenhofen an der Ilm
+                </p>
+              </div>
+
+              <i class="fas fa-external-link-alt text-gray-400 dark:text-gray-600 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors"></i>
+            </div>
+          </a>
+
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-center pt-12 pb-6 border-t border-gray-200 dark:border-gray-800">
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+          Markus Herhoffer &middot; Scheyerer Str. 50 &middot; 85276 Pfaffenhofen an der Ilm
+        </p>
+        <p class="text-xs text-gray-500 dark:text-gray-600">
+          &copy; 2026 All rights reserved
+        </p>
+      </footer>
+
     </div>
-  </footer>
+  </div>
+
 </body>
-
 </html>
