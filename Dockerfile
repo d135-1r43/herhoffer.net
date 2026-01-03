@@ -7,7 +7,6 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy static website files
 COPY index.html /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
-COPY README.md /usr/share/nginx/html/
 
 # Add custom nginx configuration for better caching and compression
 COPY nginx.conf /etc/nginx/conf.d/default.conf
