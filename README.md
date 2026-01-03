@@ -71,7 +71,19 @@ The site automatically adapts to your system's dark/light mode preference:
 
 ## Deployment
 
-The site is pure HTML and can be deployed to any static hosting:
+### Docker (Recommended)
+
+The site includes a Docker setup for easy deployment:
+
+- **Docker Image**: Automatically built and pushed to GitHub Container Registry
+- **Portainer Ready**: Includes `docker-compose.yml` for Portainer stacks
+- **nginx-proxy-manager**: Pre-configured for external network integration
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed Docker deployment instructions.
+
+### Static Hosting
+
+The site is pure HTML and can also be deployed to any static hosting:
 
 - **GitHub Pages**: Push to `gh-pages` branch
 - **Netlify**: Drag & drop the project folder
