@@ -297,12 +297,16 @@
           Markus Herhoffer &middot; Scheyerer Str. 50 &middot; 85276 Pfaffenhofen an der Ilm
         </p>
         <p class="text-xs text-gray-500 dark:text-gray-600">
-          &copy; 2026 All rights reserved
+          &copy; <span id="year"></span> All rights reserved
         </p>
       </footer>
 
     </div>
   </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
